@@ -1,0 +1,279 @@
+/*general*/
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h3,
+p {
+  font-family: helvetica;
+}
+/*header top*/
+.container {
+  height: 30rem;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.topcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  background-color: cadetblue;
+  width: 960px;
+  margin-top: 1rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.logoleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.logotext {
+  padding-left: 1rem;
+}
+
+.logotext p {
+  font-size: 1rem;
+}
+
+.logotext p,
+span p,
+.menu p {
+  color: white;
+}
+
+span {
+  display: inline-flex;
+}
+
+span p {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/*middle section of top banner*/
+
+.caption {
+  display: flex;
+  justify-content: flex-end;
+}
+.captiontext p {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.captiontext {
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin-right: 9rem;
+}
+
+/*middle section of page*/
+.containericon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.icon1 img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+
+}
+
+.icon2 img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon3 img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon1 p,
+.icon2 p,
+.icon3 p {
+  margin: 0rem;
+  padding: 0rem;
+}
+/*text block of mid section*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutcontainer {
+  width: 960px;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+.appointm {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+  display: block;
+}
+.headline h3 {
+  background-color: cadetblue;
+  width: 10rem;
+  margin-top: 3rem;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.text {
+  margin-top: 1rem;
+}
+/*footer*/
+.containerfoot {
+  background-color: azure;
+  width: 960px;
+  margin: auto;
+}
+
+.footholder {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.logofoot {
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+.logofoot img {
+  height: 1.5rem;
+  width: auto;
+}
+
+/*media queries*/
+@media only screen and (min-width:764px) {
+  .menusmall p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .container {
+    height: 22rem;
+  }
+  .top {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .captiontext {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .captiontext p {
+    font-size: 1.33rem;
+  }
+  .containerfoot {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:764px) {
+  .menusmall {
+    display: block;
+    padding-right: 2rem;
+  }
+  nav {
+    display: none;
+  }
+  .logotext {
+    display: none;
+  }
+  .container {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .captiontext {
+    margin-top: 9rem;
+    padding: 1rem auto 1rem auto;
+    width: 100%;
+    margin-right: 0rem;
+    text-align: center;
+  }
+  .icon1 p,
+  .icon2 p,
+  .icon3 p {
+    font-size: 0.77rem;
+  }
+  .containericon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.33rem;
+    margin-bottom: 2.33rem;
+  }
+  .icon1,
+  .icon2,
+  .icon3 {
+    max-width: 5rem;
+    max-height: 8rem;
+    margin: 1.54rem;
+  }
+  .aboutcontainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .appointm {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 4rem;
+  }
+  .headline h3 {
+    background-color: cadetblue;
+    width: 100%;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  .copyright {
+    display: none;
+  }
+  .footholder {
+    display: flex;
+    justify-content: center;
+  }
+}
